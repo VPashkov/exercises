@@ -1,0 +1,56 @@
+{
+  "name": "phoenix_trello",
+  "version": "0.1.0",
+  "description": "Trello clone from https://blog.diacode.com/trello-clone-with-phoenix-and-react-pt-1",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-plugin-transform-decorators-legacy": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "babel-preset-stage-0": "*",
+    "babel-preset-stage-2": "*",
+    "css-loader": "*",
+    "extract-text-webpack-plugin": "*",
+    "node-libs-browser": "*",
+    "node-sass": "*",
+    "sass-loader": "*",
+    "style-loader": "*",
+    "webpack": "*"
+  },
+  "dependencies": {
+    "bourbon": "^4.2.7",
+    "bourbon-neat": "^1.8.0",
+    "classnames": "^2.2.5",
+    "es6-promise": "^4.0.5",
+    "history": "^4.4.1",
+    "invariant": "^2.2.2",
+    "isomorphic-fetch": "^2.2.1",
+    "moment": "^2.17.1",
+    "phoenix": "file:deps/phoenix",
+    "phoenix_html": "file:deps/phoenix_html",
+    "react": "^15.4.1",
+    "react-addons-css-transition-group": "^15.4.1",
+    "react-dnd": "^2.1.4",
+    "react-dnd-html5-backend": "^2.1.2",
+    "react-dom": "^15.4.1",
+    "react-gravatar": "^2.6.1",
+    "react-page-click": "^3.0.0",
+    "react-redux": "^4.4.6",
+    "react-router": "^3.0.0",
+    "react-router-redux": "^4.0.7",
+    "redux": "^3.6.0",
+    "redux-logger": "^2.7.4",
+    "redux-thunk": "^2.1.0"
+  }
+}
