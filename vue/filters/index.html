@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<div id="app">
+	<p>{{ message | uppercase }}</p>
+	<p>{{ message | lowercase }}</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.js"></script>
+
+<script>
+	// Global filter
+	Vue.filter('lowercase', value => value.toLowerCase())
+	
+	new Vue({
+		data: {
+			message: 'Hello world!'
+		},
+		filters: {
+			// Local filter
+			uppercase: value => value.toUpperCase()
+		},
+		el: '#app'
+	})
+</script>

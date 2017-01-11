@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css">
+
+<div id="app">
+    <alert type="info"    title="Info"    message="Some info"></alert>
+    <alert type="danger"  title="Error"   message="An error"></alert>
+    <alert type="warning" title="Warning" message="A warning"></alert>
+    <alert type="success" title="Success" message="Success!"></alert>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.js"></script>
+
+<script>
+    Vue.component('alert', {
+        props: ['type', 'title', 'message'],
+        template: `
+            <div v-bind:class="'alert alert-' + type" role="alert">
+                <b>{{ title }}</b>
+                {{ message }}
+            </div>
+        `
+    })
+    
+    new Vue({ el: '#app' })
+</script>
