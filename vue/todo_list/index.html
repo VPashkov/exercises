@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<style>
+    .todoItem {
+        width: 100px;
+    }
+
+    .complete {
+        text-decoration: line-through;
+        color: gray;
+    }
+</style>
+
+<div id="app">
+    <input type="text"
+           id="new-item"
+           name="new-item"
+           placeholder="New item text"
+           v-on:keyup.enter="addNewItem"
+           v-bind:autofocus="true"
+           v-model="newItemText"
+    />
+    <button v-on:click="addNewItem">Add new item</button>
+    <ul v-for="item in visibleItems">
+        <li class="todoItem" 
+            v-text="item.text"
+            v-bind:class="{ complete: item.complete }"
+            v-on:click="item.toggle">
+        </li> 
+    </ul>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.js"></script>
+
+<script>
+
+    function todoItem(text, complete) {
+
+        let item = {
+            text: text,
+            complete: complete,
+            toggle: toggle
+        }
+
+
+        function toggle() {
+            item.complete = !item.complete
+        }
+
+        return item
+
+    }
+
+    new Vue({ 
+        el: '#app',
+        data: {
+            listItems: [
+                todoItem('Buy milk'),
+                todoItem('Call Maks')
+            ],
+            newItemText: '',
+            filter: {
+                onlyComplete: false
+            }
+        },
+        methods: {
+            addNewItem() {
+                const newItem = todoItem(this.newItemText)
+                this.listItems.push(newItem)
+                this.newItemText = ''
+            }
+        },
+        computed: {
+            visibleItems() {
+                return this.listItems
+            }
+        }
+    })
+</script>
