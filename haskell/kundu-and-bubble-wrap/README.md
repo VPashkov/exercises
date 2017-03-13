@@ -1,1 +1,0 @@
-# Solution for Kundu And Bubble Wrap challenge on [hackerrank.com](https://www.hackerrank.com/challenges/kundu-and-bubble-wrap)

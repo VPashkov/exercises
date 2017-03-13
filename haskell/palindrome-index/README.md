@@ -1,1 +1,0 @@
-# Solution for Palindrome Index challenge from [hackerrank.com](https://www.hackerrank.com/challenges/palindrome-index)

@@ -1,1 +1,0 @@
-# Solution for Remove Duplicates challenge on [hackerrank.com](https://www.hackerrank.com/challenges/remove-duplicates)
