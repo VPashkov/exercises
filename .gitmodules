@@ -1,5 +1,5 @@
 [submodule "learning-javascript"]
-	path = learning-javascript
+	path = javascript
 	url = https://github.com/VPashkov/learning-javascript
 [submodule "learning-haskell"]
 	path = haskell
